@@ -18,13 +18,13 @@ const getAllBlog =async (req, res) => {
 request.body = {
     heading,
     body,
-    creator_id
-    tags
+    tags,
+    token
 }
 
 1. Create new blog from request body .
 2. Save heading, body, creator_id, tags for every blog.
-3. "creator_id" is "userId" in payload that we get from the JWT token.
+3. "creator_id" is "userId" in payload that we get from the JWT token(token in request body).
 
 Response :
 
